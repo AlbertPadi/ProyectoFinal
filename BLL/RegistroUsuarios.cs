@@ -30,22 +30,22 @@ namespace BLL
             this.Cedula = 0;
             this.Clave = "";
         }
-        public override bool Buscar(int IdBuscado)
-        {
-            throw new NotImplementedException();
-        }
+        public override bool Insertar()
+                {
+                    
+                }
 
         public override bool Editar()
         {
             throw new NotImplementedException();
         }
 
-        public override bool Eliminar()
-        {
-            throw new NotImplementedException();
-        }
+         public override bool Eliminar()
+                {
+                    throw new NotImplementedException();
+                }
 
-        public override bool Insertar()
+        public override bool Buscar(int IdBuscado)
         {
             throw new NotImplementedException();
         }
