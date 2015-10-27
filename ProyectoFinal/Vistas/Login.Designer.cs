@@ -97,6 +97,7 @@
             this.Registrarbutton.Size = new System.Drawing.Size(92, 42);
             this.Registrarbutton.TabIndex = 6;
             this.Registrarbutton.UseVisualStyleBackColor = true;
+            this.Registrarbutton.Click += new System.EventHandler(this.Registrarbutton_Click);
             // 
             // label3
             // 

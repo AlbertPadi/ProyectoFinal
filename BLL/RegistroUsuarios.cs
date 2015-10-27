@@ -13,10 +13,10 @@ namespace BLL
         Conexion con = new Conexion();
         public string  Nombre { get; set; }
         public string Apellido { get; set; }
-        public int  Telefono { get; set; }
+        public string  Telefono { get; set; }
         public string Direccion { get; set; }
-        public string  FechaNacimiento { get; set; }
-        public int Cedula { get; set; }
+        public int sexo { get; set; }
+        public string Cedula { get; set; }
         public string Clave { get; set; }
 
 
@@ -24,16 +24,28 @@ namespace BLL
         {
             this.Nombre = "";
             this.Apellido = "";
-            this.Telefono = 0;
+            this.Telefono = "";
             this.Direccion = "";
-            this.FechaNacimiento = "";
-            this.Cedula = 0;
+          
+            this.Cedula = "";
             this.Clave = "";
         }
         public override bool Insertar()
-                {
-                    
-                }
+        {
+            bool retorno = false;
+            try
+            {
+                
+            retorno = con.Ejecutar(String.Format("Insert Into RegistroUsuarios(Nombre, Apellido, Telefono, Direccion, Cedula, sexo, Clave) values('{0}', '{1}', '{2}', '{3}', {4}, '{5}', '{6}')", this.Nombre, this.Apellido, this.Telefono, this.Direccion, this.Cedula, this.sexo, this.Clave));
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return retorno;
+        }
 
         public override bool Editar()
         {

@@ -21,5 +21,11 @@ namespace ProyectoFinal.Vistas
         {
 
         }
+
+        private void Registrarbutton_Click(object sender, EventArgs e)
+        {
+            RegistroUsuario registro = new RegistroUsuario();
+            registro.Show();
+        }
     }
 }

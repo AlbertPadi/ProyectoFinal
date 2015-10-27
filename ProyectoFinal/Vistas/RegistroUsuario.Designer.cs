@@ -33,17 +33,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.MascradioButton = new System.Windows.Forms.RadioButton();
             this.FemradioButton = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.SexogroupBox = new System.Windows.Forms.GroupBox();
             this.NombretextBox = new System.Windows.Forms.TextBox();
             this.ApellidotextBox = new System.Windows.Forms.TextBox();
             this.TelefonotextBox = new System.Windows.Forms.TextBox();
             this.DirecciontextBox = new System.Windows.Forms.TextBox();
-            this.FNdateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.CedulatextBox = new System.Windows.Forms.TextBox();
             this.ClavetextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,7 +50,7 @@
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Limpiarbutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.SexogroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -95,16 +93,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefono";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 199);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Fecha Nacimiento";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -119,7 +107,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(381, 199);
+            this.label7.Location = new System.Drawing.Point(12, 199);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 16);
             this.label7.TabIndex = 6;
@@ -149,17 +137,17 @@
             this.FemradioButton.Text = "Femenino";
             this.FemradioButton.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // SexogroupBox
             // 
-            this.groupBox1.Controls.Add(this.FemradioButton);
-            this.groupBox1.Controls.Add(this.MascradioButton);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(384, 66);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(233, 105);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sexo";
+            this.SexogroupBox.Controls.Add(this.FemradioButton);
+            this.SexogroupBox.Controls.Add(this.MascradioButton);
+            this.SexogroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SexogroupBox.Location = new System.Drawing.Point(384, 66);
+            this.SexogroupBox.Name = "SexogroupBox";
+            this.SexogroupBox.Size = new System.Drawing.Size(233, 105);
+            this.SexogroupBox.TabIndex = 10;
+            this.SexogroupBox.TabStop = false;
+            this.SexogroupBox.Text = "Sexo";
             // 
             // NombretextBox
             // 
@@ -184,17 +172,10 @@
             // 
             // DirecciontextBox
             // 
-            this.DirecciontextBox.Location = new System.Drawing.Point(152, 150);
+            this.DirecciontextBox.Location = new System.Drawing.Point(152, 154);
             this.DirecciontextBox.Name = "DirecciontextBox";
             this.DirecciontextBox.Size = new System.Drawing.Size(174, 20);
             this.DirecciontextBox.TabIndex = 14;
-            // 
-            // FNdateTimePicker
-            // 
-            this.FNdateTimePicker.Location = new System.Drawing.Point(152, 199);
-            this.FNdateTimePicker.Name = "FNdateTimePicker";
-            this.FNdateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.FNdateTimePicker.TabIndex = 15;
             // 
             // CedulatextBox
             // 
@@ -205,7 +186,7 @@
             // 
             // ClavetextBox
             // 
-            this.ClavetextBox.Location = new System.Drawing.Point(443, 195);
+            this.ClavetextBox.Location = new System.Drawing.Point(152, 199);
             this.ClavetextBox.Name = "ClavetextBox";
             this.ClavetextBox.Size = new System.Drawing.Size(174, 20);
             this.ClavetextBox.TabIndex = 17;
@@ -266,6 +247,7 @@
             this.Guardarbutton.Size = new System.Drawing.Size(102, 37);
             this.Guardarbutton.TabIndex = 18;
             this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // RegistroUsuario
             // 
@@ -281,15 +263,13 @@
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.ClavetextBox);
             this.Controls.Add(this.CedulatextBox);
-            this.Controls.Add(this.FNdateTimePicker);
             this.Controls.Add(this.DirecciontextBox);
             this.Controls.Add(this.TelefonotextBox);
             this.Controls.Add(this.ApellidotextBox);
             this.Controls.Add(this.NombretextBox);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.SexogroupBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -297,8 +277,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistroUsuario";
             this.Text = "Registro Usuario";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.RegistroUsuario_Load);
+            this.SexogroupBox.ResumeLayout(false);
+            this.SexogroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,17 +291,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton MascradioButton;
         private System.Windows.Forms.RadioButton FemradioButton;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox SexogroupBox;
         private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.TextBox ApellidotextBox;
         private System.Windows.Forms.TextBox TelefonotextBox;
         private System.Windows.Forms.TextBox DirecciontextBox;
-        private System.Windows.Forms.DateTimePicker FNdateTimePicker;
         private System.Windows.Forms.TextBox CedulatextBox;
         private System.Windows.Forms.TextBox ClavetextBox;
         private System.Windows.Forms.Button Guardarbutton;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ProyectoFinal.Vistas;
 namespace ProyectoFinal
 {
     static class Program
@@ -14,9 +14,11 @@ namespace ProyectoFinal
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            Application.Run(new Login());
+        
         }
     }
 }
