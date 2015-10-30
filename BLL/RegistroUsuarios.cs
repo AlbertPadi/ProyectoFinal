@@ -24,7 +24,7 @@ namespace BLL
         {
             this.Nombre = "";
             this.Apellido = "";
-            this.Telefono = "";
+            
             this.Direccion = "";
           
             this.Cedula = "";
@@ -36,7 +36,7 @@ namespace BLL
             try
             {
                 
-            retorno = con.Ejecutar(String.Format("Insert Into RegistroUsuarios(Nombre, Apellido, Telefono, Direccion, Cedula, sexo, Clave) values('{0}', '{1}', '{2}', '{3}', {4}, '{5}', '{6}')", this.Nombre, this.Apellido, this.Telefono, this.Direccion, this.Cedula, this.sexo, this.Clave));
+            retorno = con.Ejecutar(String.Format("Insert Into RegistroUsuarios(Nombre, Apellido, Direccion, Cedula, sexo, Clave) values('{0}', '{1}', '{2}', '{3}', {4}, '{5}')", this.Nombre, this.Apellido, this.Direccion, this.Cedula, this.sexo, this.Clave));
             }
             catch (Exception ex)
             {
@@ -53,9 +53,11 @@ namespace BLL
         }
 
          public override bool Eliminar()
-                {
-                    throw new NotImplementedException();
-                }
+         {
+            bool retorno = false;
+            retorno = con.Ejecutar(String.Format("Delete from RegistroUsuarios where Clave ={0}", this.Clave));
+            return retorno;
+         }
 
         public override bool Buscar(int IdBuscado)
         {

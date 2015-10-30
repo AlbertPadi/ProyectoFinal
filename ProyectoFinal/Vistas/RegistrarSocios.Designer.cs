@@ -334,11 +334,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(341, 417);
+            this.label15.Location = new System.Drawing.Point(346, 417);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 16);
+            this.label15.Size = new System.Drawing.Size(53, 16);
             this.label15.TabIndex = 33;
-            this.label15.Text = "Cancelar";
+            this.label15.Text = "Nuevo";
             // 
             // label16
             // 

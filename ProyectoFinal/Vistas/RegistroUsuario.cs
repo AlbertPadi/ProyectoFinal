@@ -50,5 +50,16 @@ namespace ProyectoFinal.Vistas
 
             reg.Insertar();
         }
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
+        {
+            EliminarUsuario eliminar = new EliminarUsuario();
+            eliminar.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

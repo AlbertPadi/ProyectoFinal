@@ -16,7 +16,7 @@ namespace DAL
 
         public Conexion()
         {
-            con = new SqlConnection("Data Source=APACHEW-PC;Initial Catalog=ProyectoDB;Integrated Security=True");
+            con = new SqlConnection("Data Source=APACHEW-PC\\SQLEXPRESS;Initial Catalog=ProyectoDB;Integrated Security=True");
             cmd = new SqlCommand();
         }
 

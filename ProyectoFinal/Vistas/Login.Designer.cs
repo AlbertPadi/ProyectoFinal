@@ -81,6 +81,7 @@
             this.Entrarbutton.Size = new System.Drawing.Size(92, 42);
             this.Entrarbutton.TabIndex = 4;
             this.Entrarbutton.UseVisualStyleBackColor = true;
+            this.Entrarbutton.Click += new System.EventHandler(this.Entrarbutton_Click);
             // 
             // Limpiarbutton
             // 

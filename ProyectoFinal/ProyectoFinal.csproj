@@ -70,6 +70,12 @@
     <Compile Include="Vistas\ControlDeLotes.Designer.cs">
       <DependentUpon>ControlDeLotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Exportacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ControlDeLotes.resx">
       <DependentUpon>ControlDeLotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Exportacion.resx">
       <DependentUpon>Exportacion.cs</DependentUpon>

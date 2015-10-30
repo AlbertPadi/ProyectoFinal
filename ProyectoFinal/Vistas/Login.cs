@@ -24,8 +24,14 @@ namespace ProyectoFinal.Vistas
 
         private void Registrarbutton_Click(object sender, EventArgs e)
         {
-            RegistroUsuario registro = new RegistroUsuario();
-            registro.Show();
+            RegistroUsuario rs = new RegistroUsuario();
+            rs.Show();
+        }
+
+        private void Entrarbutton_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            principal.Show();
         }
     }
 }

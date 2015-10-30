@@ -143,7 +143,7 @@
             // RegistrarSbutton
             // 
             this.RegistrarSbutton.Image = global::ProyectoFinal.Properties.Resources._1444595857_add_user;
-            this.RegistrarSbutton.Location = new System.Drawing.Point(39, 198);
+            this.RegistrarSbutton.Location = new System.Drawing.Point(51, 198);
             this.RegistrarSbutton.Name = "RegistrarSbutton";
             this.RegistrarSbutton.Size = new System.Drawing.Size(85, 39);
             this.RegistrarSbutton.TabIndex = 1;
